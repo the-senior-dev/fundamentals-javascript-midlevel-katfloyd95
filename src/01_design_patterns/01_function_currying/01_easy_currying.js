@@ -10,6 +10,11 @@
 
 function curry(fn) {
     // Your implementation here
+    return function curriedFunc(a) {
+        return function curriedFunc(b) {
+            return fn(a,b);1
+        };
+    }
 }
 
 module.exports = curry;

@@ -9,7 +9,14 @@ If an empty string is provided, the function should immediately print "Nothing t
 */
 
 function delayedPrinter(str, delay) {
-    // Your code here
+    if (!str || delay < 1) {
+       return console.log("Invalid input");
+    }
+    setTimeout(() => {
+        if (str) {
+             return console.log(str);
+        }
+    }, delay);
 }
 
 module.exports = delayedPrinter;

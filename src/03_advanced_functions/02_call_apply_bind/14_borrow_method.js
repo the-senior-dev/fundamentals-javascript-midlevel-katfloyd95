@@ -23,6 +23,7 @@ function borrowMethod() {
   
     // Borrow the greet method from source and use it for target
     // TODO: Implement this part
+    return source.greet.call(target);
     
   }
   
