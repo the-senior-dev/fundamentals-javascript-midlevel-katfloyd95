@@ -28,4 +28,3 @@ function borrowMethod() {
   }
   
   module.exports = borrowMethod;
-  
